@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome - Timetable Automation System{% endblock %}
+
+{% block extra_css %}
+.hero {
+text-align: center;
+padding: 4rem 2rem;
+max-width: 800px;
+margin: 0 auto;
+}
+
+.hero h2 {
+font-size: 3rem;
+font-weight: 800;
+margin-bottom: 1.5rem;
+color: var(--text-main);
+line-height: 1.1;
+}
+
+.hero p {
+font-size: 1.25rem;
+color: var(--text-muted);
+margin-bottom: 3rem;
+}
+
+.options-container {
+display: flex;
+justify-content: center;
+gap: 1.5rem;
+margin-top: 2rem;
+}
+
+.option-card {
+background: var(--card-bg);
+border: 1px solid var(--border);
+padding: 2.5rem;
+border-radius: 16px;
+width: 280px;
+text-align: center;
+transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+cursor: pointer;
+text-decoration: none;
+color: inherit;
+box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.option-card:hover {
+transform: translateY(-8px);
+border-color: var(--primary);
+box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.option-card h3 {
+margin-top: 0;
+font-size: 1.5rem;
+color: var(--text-main);
+}
+
+.option-card p {
+font-size: 1rem;
+margin-bottom: 1.5rem;
+color: var(--text-muted);
+}
+
+.icon-box {
+width: 64px;
+height: 64px;
+background: rgba(37, 99, 235, 0.1);
+color: var(--primary);
+border-radius: 12px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0 auto 1.5rem;
+font-size: 2rem;
+}
+{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h2>Smart Timetable Generator</h2>
+    <p>Generate optimized, clash-free academic schedules effortlessly for teachers and students.</p>
+
+    <div class="options-container">
+        <a href="{{ url_for('create_page') }}" class="option-card">
+            <div class="icon-box">🏛️</div>
+            <h3>Department</h3>
+            <p>Upload faculty data and generate theory schedules.</p>
+            <button style="width: 100%;">Get Started</button>
+        </a>
+
+        <a href="{{ url_for('lab_page') }}" class="option-card">
+            <div class="icon-box">🧪</div>
+            <h3>Labs</h3>
+            <p>Bulk allocate lab slots across all departments.</p>
+            <button style="width: 100%;" class="secondary-btn">Manage Labs</button>
+        </a>
+
+        <a href="{{ url_for('view_page') }}" class="option-card">
+            <div class="icon-box">👁️</div>
+            <h3>View Portal</h3>
+            <p>Access and download finalized schedules.</p>
+            <button
+                style="width: 100%; border: 1px solid var(--border); background: transparent; color: var(--text-muted);">View
+                Portals</button>
+        </a>
+    </div>
+</section>
+{% endblock %}

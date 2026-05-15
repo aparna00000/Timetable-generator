@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generate Full Timetable</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .upload-card {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            margin-bottom: 10px;
+            font-size: 17px;
+            color: #0f172a;
+            font-weight: 600;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #475569;
+            font-size: 14px;
+        }
+
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            background: #ffffff;
+            font-family: inherit;
+            color: #64748b;
+        }
+        
+        input[type="file"]::file-selector-button {
+            padding: 8px 16px;
+            margin-right: 16px;
+            background: #f1f5f9;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            color: #475569;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        
+        input[type="file"]::file-selector-button:hover {
+            background: #e2e8f0;
+        }
+
+        .semester-block {
+            background: #ffffff;
+            padding: 24px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        }
+
+        .semester-title {
+            font-size: 18px;
+            color: #0f172a;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+
+        .generate-btn {
+            width: 100%;
+        }
+
+        .info-box {
+            background: #eff6ff;
+            padding: 16px;
+            margin-bottom: 24px;
+            border-left: 4px solid #3b82f6;
+            border-radius: 4px;
+            color: #1e3a8a;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <h1>Generate Timetable for All 4 Years</h1>
+    <nav>
+        <ul>
+    <li><a href="{{ url_for('home') }}">Home</a></li>
+    <li><a href="{{ url_for('create_page') }}">Department</a></li>
+    <li><a href="{{ url_for('lab_page') }}">Labs</a></li>
+    <li><a href="{{ url_for('view_page') }}">View</a></li>
+</ul>
+    </nav>
+</header>
+
+
+<div class="container">
+    <section class="card upload-card">
+
+        <div class="info-box">
+            <strong>🔹 Upload Instructions & Format</strong><br><br>
+            Please ensure your Excel files use the exact column headers below (capitalization doesn't matter, but spelling does).<br><br>
+            
+            <strong>🧑‍🏫 Teacher File Required Columns:</strong>
+            <ul>
+                <li><code>Teacher Name</code></li>
+                <li><code>Subject Name</code></li>
+                <li><code>Hours per Week</code></li>
+                <li><code>Type (Theory/Lab)</code> <i>(Optional, defaults to Theory)</i></li>
+            </ul>
+            <br>
+            
+            <strong>🧪 Lab File Required Columns:</strong>
+            <ul>
+                <li><code>Teacher Name</code></li>
+                <li><code>Lab Subject</code></li>
+                <li><code>Day</code> <i>(e.g., Monday, Tuesday)</i></li>
+                <li><code>Start Period</code> <i>(e.g., 1, 2, 3)</i></li>
+                <li><code>End Period</code> <i>(e.g., 2, 3, 4)</i></li>
+            </ul>
+            <br>
+            🔹 System will generate a random clash-free timetable<br>
+            🔹 Each year's timetable will be shown separately
+        </div>
+
+        <form action="{{ url_for('generate') }}" method="post" enctype="multipart/form-data">
+
+            <!-- Semester Block -->
+            <div class="semester-block">
+                <div class="semester-title">Year Details</div>
+
+                <div class="form-group">
+                    <label>Select Department</label>
+                    <select id="dept_dropdown" name="dept_dropdown" onchange="toggleDeptCustom()" required>
+                        <option value="">-- Choose Department --</option>
+                        <option value="CS">CS (Computer Science)</option>
+                        <option value="IT">IT (Information Technology)</option>
+                        <option value="MECH">MECH (Mechanical)</option>
+                        <option value="EE">EE (Electrical)</option>
+                        <option value="EC">EC (Electronics)</option>
+                        <option value="CIVIL">CIVIL</option>
+                        <option value="Other">Other (Add New)</option>
+                    </select>
+                </div>
+
+                <div class="form-group" id="dept_custom_group" style="display: none;">
+                    <label>Enter New Department Name</label>
+                    <input type="text" id="dept_custom" name="dept_custom" placeholder="e.g. CHEMICAL">
+                </div>
+
+                <script>
+                    function toggleDeptCustom() {
+                        const dropdown = document.getElementById('dept_dropdown');
+                        const customGroup = document.getElementById('dept_custom_group');
+                        const customInput = document.getElementById('dept_custom');
+                        
+                        if (dropdown.value === 'Other') {
+                            customGroup.style.display = 'block';
+                            customInput.required = true;
+                        } else {
+                            customGroup.style.display = 'none';
+                            customInput.required = false;
+                        }
+                    }
+                </script>
+
+                <div class="form-group">
+                    <label>Year / Class Name (e.g., First Year)</label>
+                    <input type="text" name="year_name" placeholder="Enter year name (e.g., First Year)" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Section Name (e.g., CS1, CS2, IT1)</label>
+                    <input type="text" name="section_name" placeholder="Enter section name (e.g., CS1)" required>
+                    <small style="color: #64748b; font-size: 12px;">Each section gets its own independent timetable. Teachers are clash-checked globally across all sections.</small>
+                </div>
+
+                <div class="form-group">
+                    <label>Upload Teacher-Subject File</label>
+                    <input type="file" name="teacher_file" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Upload Fixed Lab Slot File</label>
+                    <input type="file" name="lab_file" required>
+                </div>
+            </div>
+
+            
+            <button type="submit" class="generate-btn">
+                ✨ Generate Timetable
+            </button>
+
+        </form>
+
+    </section>
+</div>
+
+<footer>
+    <p>© 2026 Timetable Automation System</p>
+</footer>
+
+</body>
+</html>

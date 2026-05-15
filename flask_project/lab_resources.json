@@ -1,0 +1,13 @@
+{
+  "department_rooms": {
+    "CS": ["CS-Lab 1", "CS-Lab 2", "Software Lab"],
+    "IT": ["IT-Lab A", "IT-Lab B"],
+    "MECH": ["Thermal Engineering Lab", "Workshop", "CAD Lab"],
+    "CIVIL": ["Surveying Lab", "CADD Lab"],
+    "EEE": ["Power Electronics Lab", "Circuit Lab"],
+    "ECE": ["Communication Lab", "VLSI Lab"]
+  },
+  "shared_blocks": {
+    "CS_IT_Common": ["Common-Lab 1", "Common-Lab 2"]
+  }
+}

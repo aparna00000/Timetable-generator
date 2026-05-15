@@ -1,0 +1,694 @@
+{
+    "IT": {
+        "First Year": {
+            "IT1": {
+                "Monday": [
+                    {
+                        "subject": "Dm",
+                        "teacher": "ancy",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "web",
+                        "teacher": "shamal",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "DBMS",
+                        "teacher": "nithya",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "web",
+                        "teacher": "shamal",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free"
+                    },
+                    {
+                        "subject": "DS",
+                        "teacher": "rasna",
+                        "type": "Theory"
+                    }
+                ],
+                "Tuesday": [
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free"
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free"
+                    },
+                    {
+                        "subject": "web",
+                        "teacher": "shamal",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "web",
+                        "teacher": "shamal",
+                        "type": "Lab"
+                    },
+                    {
+                        "subject": "web",
+                        "teacher": "shamal",
+                        "type": "Lab"
+                    },
+                    {
+                        "subject": "web",
+                        "teacher": "shamal",
+                        "type": "Lab"
+                    }
+                ],
+                "Wednesday": [
+                    {
+                        "subject": "DBMS",
+                        "teacher": "nithya",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "DCN",
+                        "teacher": "akhil",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free"
+                    },
+                    {
+                        "subject": "Dm",
+                        "teacher": "ancy",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "DBMS",
+                        "teacher": "nithya",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "DS",
+                        "teacher": "rasna",
+                        "type": "Theory"
+                    }
+                ],
+                "Thursday": [
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free"
+                    },
+                    {
+                        "subject": "DS",
+                        "teacher": "rasna",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "DBMS",
+                        "teacher": "nithya",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "DS",
+                        "teacher": "rasna",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "DCN",
+                        "teacher": "akhil",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free"
+                    }
+                ],
+                "Friday": [
+                    {
+                        "subject": "DBMS",
+                        "teacher": "nithya",
+                        "type": "Lab"
+                    },
+                    {
+                        "subject": "DBMS",
+                        "teacher": "nithya",
+                        "type": "Lab"
+                    },
+                    {
+                        "subject": "DBMS",
+                        "teacher": "nithya",
+                        "type": "Lab"
+                    },
+                    {
+                        "subject": "web",
+                        "teacher": "shamal",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free"
+                    },
+                    {
+                        "subject": "DCN",
+                        "teacher": "akhil",
+                        "type": "Theory"
+                    }
+                ]
+            }
+        },
+        "Second Year": {
+            "IT1": {
+                "Monday": [
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free"
+                    },
+                    {
+                        "subject": "pyhton",
+                        "teacher": "rasna",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free"
+                    },
+                    {
+                        "subject": "coi",
+                        "teacher": "ancy",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "pyhton",
+                        "teacher": "rasna",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "MS",
+                        "teacher": "nithya",
+                        "type": "Theory"
+                    }
+                ],
+                "Tuesday": [
+                    {
+                        "subject": "pyhton",
+                        "teacher": "rasna",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free"
+                    },
+                    {
+                        "subject": "java",
+                        "teacher": "akhil",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free"
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free"
+                    },
+                    {
+                        "subject": "MS",
+                        "teacher": "nithya",
+                        "type": "Theory"
+                    }
+                ],
+                "Wednesday": [
+                    {
+                        "subject": "Data",
+                        "teacher": "shamal",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free"
+                    },
+                    {
+                        "subject": "MS",
+                        "teacher": "nithya",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "web",
+                        "teacher": "shamal",
+                        "type": "Lab"
+                    },
+                    {
+                        "subject": "web",
+                        "teacher": "shamal",
+                        "type": "Lab"
+                    },
+                    {
+                        "subject": "web",
+                        "teacher": "shamal",
+                        "type": "Lab"
+                    }
+                ],
+                "Thursday": [
+                    {
+                        "subject": "DBMS",
+                        "teacher": "nithya",
+                        "type": "Lab"
+                    },
+                    {
+                        "subject": "DBMS",
+                        "teacher": "nithya",
+                        "type": "Lab"
+                    },
+                    {
+                        "subject": "DBMS",
+                        "teacher": "nithya",
+                        "type": "Lab"
+                    },
+                    {
+                        "subject": "Data",
+                        "teacher": "shamal",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "coi",
+                        "teacher": "ancy",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "MS",
+                        "teacher": "nithya",
+                        "type": "Theory"
+                    }
+                ],
+                "Friday": [
+                    {
+                        "subject": "pyhton",
+                        "teacher": "rasna",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "java",
+                        "teacher": "akhil",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "Data",
+                        "teacher": "shamal",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "java",
+                        "teacher": "akhil",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free"
+                    },
+                    {
+                        "subject": "Data",
+                        "teacher": "shamal",
+                        "type": "Theory"
+                    }
+                ]
+            }
+        }
+    },
+    "CS": {
+        "First Year": {
+            "CS1": {
+                "Monday": [
+                    {
+                        "subject": "web",
+                        "teacher": "shamal",
+                        "type": "Lab"
+                    },
+                    {
+                        "subject": "web",
+                        "teacher": "shamal",
+                        "type": "Lab"
+                    },
+                    {
+                        "subject": "web",
+                        "teacher": "shamal",
+                        "type": "Lab"
+                    },
+                    {
+                        "subject": "MS",
+                        "teacher": "nithya",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "coi",
+                        "teacher": "ancy",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "Data",
+                        "teacher": "shamal",
+                        "type": "Theory"
+                    }
+                ],
+                "Tuesday": [
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free"
+                    },
+                    {
+                        "subject": "pyhton",
+                        "teacher": "rasna",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "MS",
+                        "teacher": "nithya",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free"
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free"
+                    },
+                    {
+                        "subject": "pyhton",
+                        "teacher": "rasna",
+                        "type": "Theory"
+                    }
+                ],
+                "Wednesday": [
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free"
+                    },
+                    {
+                        "subject": "MS",
+                        "teacher": "nithya",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "pyhton",
+                        "teacher": "rasna",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "java",
+                        "teacher": "akhil",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "pyhton",
+                        "teacher": "rasna",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "java",
+                        "teacher": "akhil",
+                        "type": "Theory"
+                    }
+                ],
+                "Thursday": [
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free"
+                    },
+                    {
+                        "subject": "Data",
+                        "teacher": "shamal",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free"
+                    },
+                    {
+                        "subject": "DBMS",
+                        "teacher": "nithya",
+                        "type": "Lab"
+                    },
+                    {
+                        "subject": "DBMS",
+                        "teacher": "nithya",
+                        "type": "Lab"
+                    },
+                    {
+                        "subject": "DBMS",
+                        "teacher": "nithya",
+                        "type": "Lab"
+                    }
+                ],
+                "Friday": [
+                    {
+                        "subject": "java",
+                        "teacher": "akhil",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "Data",
+                        "teacher": "shamal",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "coi",
+                        "teacher": "ancy",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free"
+                    },
+                    {
+                        "subject": "Data",
+                        "teacher": "shamal",
+                        "type": "Theory"
+                    },
+                    {
+                        "subject": "MS",
+                        "teacher": "nithya",
+                        "type": "Theory"
+                    }
+                ]
+            }
+        }
+    },
+    "MECH": {
+        "First Year": {
+            "MECH1": {
+                "Monday": [
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    }
+                ],
+                "Tuesday": [
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    }
+                ],
+                "Wednesday": [
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    }
+                ],
+                "Thursday": [
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    }
+                ],
+                "Friday": [
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    },
+                    {
+                        "subject": "Free",
+                        "teacher": "Free",
+                        "type": "Free",
+                        "room": ""
+                    }
+                ]
+            }
+        }
+    }
+}
